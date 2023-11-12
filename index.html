@@ -38,7 +38,7 @@
 <header style="background-color: red">
     <nav class="navbar navbar-expand-lg bg-body-secondary">
         <div class="container-fluid">
-            <a class="navbar-brand  fw-bolder text-info" href="#">SL POS System</a>
+            <a class="navbar-brand  fw-bolder text-warning" href="#">SL POS System</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -85,41 +85,41 @@
             <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
         </svg>Customer</h2>
     </section>
-    <hr class="border border-info border-2 opacity-50">
+    <hr class="border border-warning border-2 opacity-50">
     <div class="row">
-        <<div class="col-md-6 container border border-4 border-dark-subtle rounded-5 p-3 shadow-lg p-3 mb-5 rounded" style="background-color: #444444; color: #ffffff" margin-left="20%">
-            <div class="form-container">
-                <div class="mb-3">
-                    <label for="txtCustomerID">Customer ID</label>
-                    <input class="form-control" id="txtCustomerID" required type="text">
-                    <span class="control-error" id="lblcusid"></span>
-                </div>
-                <div class="mb-3">
-                    <label for="txtCustomerName">Customer Name</label>
-                    <input class="form-control" id="txtCustomerName" type="text">
-                    <span class="control-error" id="lblcusname"></span>
-                </div>
-                <div class="mb-3">
-                    <label for="txtCustomerAddress">Customer Address</label>
-                    <input class="form-control" id="txtCustomerAddress" type="text">
-                    <span class="control-error" id="lblcusaddress"></span>
-                </div>
-                <div class="mb-3">
-                    <label for="txtCustomerSalary">Customer Salary</label>
-                    <input class="form-control" id="txtCustomerSalary" type="text">
-                    <span class="control-error" id="lblcussalary"></span>
-                </div>
+        <<div class="col-md-12 container border border-4 border-dark-subtle rounded-5 p-3 shadow-lg p-3 mb-5 rounded" style="background-color: #444444; color: #ffffff" margin-left="20%">
+        <div class="form-container">
+            <div class="mb-3">
+                <label for="txtCustomerID">Customer ID</label>
+                <input class="form-control" id="txtCustomerID" required type="text">
+                <span class="control-error" id="lblcusid"></span>
             </div>
-            <div class="btn-group" role="group" aria-label="...">
-                <button class="btn btn-success me-2" id="btnSaveCus" >Save</button>
-                <button class="btn btn-warning me-2" id="btnUpCus" >Update</button>
-                <button class="btn btn-danger me-2" id="btnDelCus" >Delete</button>
-                <button class="btn btn-danger" id="btnClearAll">Clear All</button>
-                <button type="button" class="btn btn-warning me-2" id="btnViewCus">View All</button>
+            <div class="mb-3">
+                <label for="txtCustomerName">Customer Name</label>
+                <input class="form-control" id="txtCustomerName" type="text">
+                <span class="control-error" id="lblcusname"></span>
+            </div>
+            <div class="mb-3">
+                <label for="txtCustomerAddress">Customer Address</label>
+                <input class="form-control" id="txtCustomerAddress" type="text">
+                <span class="control-error" id="lblcusaddress"></span>
+            </div>
+            <div class="mb-3">
+                <label for="txtCustomerSalary">Customer Salary</label>
+                <input class="form-control" id="txtCustomerSalary" type="text">
+                <span class="control-error" id="lblcussalary"></span>
             </div>
         </div>
-        <div class="col-md-6">
-            <table class="table table-success table-striped m-2 table-light">
+        <div class="btn-group" role="group" aria-label="...">
+            <button class="btn btn-success me-2" id="btnSaveCus" >Save</button>
+            <button class="btn btn-warning me-2" id="btnUpCus" >Update</button>
+            <button class="btn btn-danger me-2" id="btnDelCus" >Delete</button>
+            <button class="btn btn-danger" id="btnClearAll">Clear All</button>
+            <button type="button" class="btn btn-success me-2" id="btnViewCus">View All</button>
+        </div>
+    </div>
+        <div class="col-md-12">
+            <table class="table table-success table-striped m-2 table-dark">
                 <thead class="bg-danger text-white">
                 <tr>
                     <th>Customer ID</th>
@@ -142,14 +142,14 @@
 </main>
 
 <main class="container" id="Item">
-    <section class="bg-body-secondary">
-        <h2 class="d-inline align-middle ml-3"><svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-box-seam-fill" viewBox="0 0 20 20">
+    <section>
+        <h2 class="d-inline align-middle ml-3" style="color: #6c757d"><svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-box-seam-fill" viewBox="0 0 20 20">
             <path fill-rule="evenodd" d="M15.528 2.973a.75.75 0 0 1 .472.696v8.662a.75.75 0 0 1-.472.696l-7.25 2.9a.75.75 0 0 1-.557 0l-7.25-2.9A.75.75 0 0 1 0 12.331V3.669a.75.75 0 0 1 .471-.696L7.443.184l.01-.003.268-.108a.75.75 0 0 1 .558 0l.269.108.01.003 6.97 2.789ZM10.404 2 4.25 4.461 1.846 3.5 1 3.839v.4l6.5 2.6v7.922l.5.2.5-.2V6.84l6.5-2.6v-.4l-.846-.339L8 5.961 5.596 5l6.154-2.461L10.404 2Z"/>
         </svg> Item</h2>
     </section>
-    <hr class="border border-info border-2 opacity-50">
+    <hr class="border border-warning border-2 opacity-50">
     <div class="row">
-        <div class="col-md-6 container border border-4 border-dark-subtle rounded-5 p-3 shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+        <div class="col-md-12 container border border-4 border-dark-subtle rounded-5 p-3 shadow-lg p-3 mb-5 rounded" style="background-color: #444444; color: #ffffff" margin-left="20%">
             <div class="form-container">
                 <div class="mb-3">
                     <label for="itemCode">Item Code</label>
@@ -177,11 +177,11 @@
                 <button class="btn btn-warning me-2" id="btnUpItem">Update</button>
                 <button class="btn btn-danger me-2" id="btnDelItem">Delete</button>
                 <button class="btn btn-danger" id="btnClearAll2">Clear All</button>
-                <button type="button" class="btn btn-warning me-2" id="btnViewItem">View All</button>
+                <button type="button" class="btn btn-success me-2" id="btnViewItem">View All</button>
             </div>
         </div>
-        <div class="col-md-6">
-            <table class="table table-success table-striped m-2 table-light">
+        <div class="col-md-12">
+            <table class="table table-success table-striped m-2 table-dark">
                 <thead class="bg-danger text-white">
                 <tr>
                     <th scope="col" >Item</th>
@@ -199,16 +199,16 @@
 
 <main class="container p-2 justify-content-center" id="Orders">
     <div>
-        <h2><svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-box-seam-fill" viewBox="0 0 20 20">
+        <h2 style="color: #6c757d"><svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-box-seam-fill" viewBox="0 0 20 20">
             <path fill-rule="evenodd" d="M15.528 2.973a.75.75 0 0 1 .472.696v8.662a.75.75 0 0 1-.472.696l-7.25 2.9a.75.75 0 0 1-.557 0l-7.25-2.9A.75.75 0 0 1 0 12.331V3.669a.75.75 0 0 1 .471-.696L7.443.184l.01-.003.268-.108a.75.75 0 0 1 .558 0l.269.108.01.003 6.97 2.789ZM10.404 2 4.25 4.461 1.846 3.5 1 3.839v.4l6.5 2.6v7.922l.5.2.5-.2V6.84l6.5-2.6v-.4l-.846-.339L8 5.961 5.596 5l6.154-2.461L10.404 2Z"/>
         </svg> Place Order</h2>
-        <hr class="border border-info border-2 opacity-50">
+        <hr class="border border-warning border-2 opacity-50">
         <!--main tile-->
         <div class="jumbotron pt-4">
             <div class="row">
                 <div class="col-lg-4">
-                    <div class="card container border border-4 border-dark-subtle rounded-5 p-2">
-                        <div class="bg-primary border rounded-5 p-2 mb-1" style="font-weight: 700">Invoice Details</div>
+                    <div class="card container border border-4 border-dark-subtle rounded-5 p-2" style="background-color: #444444; color: #ffffff">
+                        <div class="bg-warning border border-dark rounded-5 p-2 mb-1" style="font-weight: 700">Invoice Details</div>
                         <div class="card-body">
                             <form>
                                 <div class="row">
@@ -268,8 +268,8 @@
                     </div>
                 </div>
                 <div class="col-lg-5 mt-lg-0 mt-3">
-                    <div class="card container border border-4 border-dark-subtle rounded-5 p-2">
-                        <div class="bg-primary border rounded-5 p-2" style="font-weight: 700">Item Select</div>
+                    <div class="card container border border-4 border-dark-subtle rounded-5 p-2" style="background-color: #444444; color: #ffffff">
+                        <div class="bg-warning border border-dark rounded-5 p-2" style="font-weight: 700">Item Select</div>
                         <div class="card-body">
                             <form>
                                 <div class="row">
@@ -307,7 +307,7 @@
                                     </div>
                                     <hr>
                                     <hr>
-                                    <div class="col-12 mt-4">
+                                    <div class="col-12 ">
                                         <div class="form-group">
                                             <label>Order Quantity :</label>
                                             <input type="email" class="form-control" id="txtQty">
@@ -323,7 +323,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 container border border-4 border-dark-subtle rounded-5 p-2">
+                <div class="col-lg-3 container border border-4 border-dark-subtle rounded-5 p-2" style="background-color: #444444; color: #ffffff">
                     <section class="content-box-2 p-4 ">
                         <div class="row">
                             <div class="col-12">
@@ -374,8 +374,8 @@
                 </div>
             </div>
             <!--order table-->
-            <div class="col-md-6">
-                <table class="table table-bordered table-hover table table-success table-striped table-light">
+            <div class="col-md-12">
+                <table class="table table-bordered table-hover table table-success table-striped table-dark m-2">
                     <thead class="bg-danger text-white">
                     <tr>
                         <th>Item Code</th>
